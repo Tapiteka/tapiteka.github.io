@@ -1,0 +1,175 @@
+@font-face {
+    font-family: ChinatownChamps;
+    src: url(chinatown-champs.ttf);
+}
+/*  Author: Tabitha Love
+    Date: September 7, 2024
+    Assignment: My Professional Website
+    Filename: style.css
+*/
+
+/* Main Styles (HTML, Body) */
+html {
+    margin: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    color: rgba(0, 0, 0, .80);
+}
+#menu-body {
+    background-color: yellow;
+}
+
+
+/* HEADER */
+header { /* both left and right */
+    margin-top: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    height: 500px;
+    width: 1100px;
+}
+#left-header { /* Div that holds titles and P tags */
+    background-color: yellow;
+    box-shadow: 0px 0px 0px 15px red inset;
+    display: block;
+    padding-bottom: 2em;
+    margin: auto;
+    max-height: 500px;
+    float: left;
+}
+#left-title { /* Both titles, H1 and H2 */
+    font-family: ChinatownChamps, Verdana, Tahoma, sans-serif;
+    font-weight: 200;
+    max-width: 100%;
+    text-align: center;
+    color: red;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, .5);
+}
+#left-title h1 { /* Shanghai Express */
+    font-size: 5.5em;
+    margin-bottom: 0;
+}
+#left-title h2 { /* Oriental Restaurant */
+    font-size: 4em;
+    margin: 0;
+}
+#left-header p { /* Hours, Address, Phone */
+    margin-left: 3em;
+}
+#right-header { 
+    display: block;
+    margin: auto;
+    float: right;
+}
+#right-header img {
+    max-width: 100%;
+    height: 425px;
+}
+
+/* STICKY ORDER BUTTON */
+#parent-button {
+    position: fixed;
+    bottom: 1em;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#parent-button a {
+    border: none;
+    background-color: red;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border-radius: 5%;
+    color: white;
+    text-decoration: none;
+}
+
+#parent-button a:hover {
+    color: yellow;
+    background-color: rgb(197, 70, 70);
+}
+
+/* ABOUT US BOX */
+#about-us-box {
+    width: 1200px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+}
+#about-us-box p {
+    display: inline-block;
+}
+figure {
+    float: left;
+
+}
+figure img {
+    width: 120px;
+}
+figcaption {
+    text-align: center;
+}
+
+/* MENU TITLES */
+#menu-title {
+    text-align: center;
+}
+#menu-title h1 {
+    font-family: ChinatownChamps, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+    margin-bottom: 0;
+}
+#menu-title p {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+.menu-category-title h2 { /* Menu category titles */
+    font-family: ChinatownChamps, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+
+/* HOVER RED LUNCH PRICES */
+.red {
+    color: red;
+}
+.price:hover span {
+    display: none;
+}
+.price:hover:before {
+    color: red;
+    content: "$7.99";
+}
+
+/* Div Parent MENU CATEGORY */
+.menu-category {
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    margin: 3em;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.menu-category-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 3em;
+    margin: 2em;
+}
+
+/* Div Child MENU ITEM */
+.menu-item-object > img {
+    box-shadow: 3px 5px 10px #b6b6b6;
+}
+.menu-item-object p {
+    margin-left: 12px;
+}
+
+/* Footer */
+footer {
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+}

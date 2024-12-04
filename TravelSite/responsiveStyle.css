@@ -1,0 +1,29 @@
+/*
+    Name: Tabitha Love
+    Assignment: Responsive Travel
+    Date: September 29, 2024
+    File: style.css
+*/
+@media screen and (max-width: 1000px) {
+    #section-1 img {
+        float: none;
+        width: 85%;
+        margin-left: 5%;
+    }
+    #header-background {
+        background-color: coral;
+    }
+}
+@media screen and (max-width: 600px) {
+    #section-1 img {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    #header-background {
+        background-color: aqua;
+    }
+    .image-column {
+        float: none;
+        width: 100%;
+    }
+}

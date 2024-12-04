@@ -1,0 +1,87 @@
+/*
+    Name: Tabitha Love
+    Assignment: Responsive Travel
+    Date: September 28, 2024
+    File: style.css
+*/
+/* General */
+@font-face {
+    font-family: Aurebesh;
+    src: url(aurebesh/Aurebesh\ Condensed\ Bold.otf);
+}
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+header {
+    color: white;
+    margin-left: 5%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    padding: 0;
+}
+header h1 {
+    font-family: Aurebesh, Verdana, sans-serif;
+    font-size: 2.6em;
+}
+#header-background {
+    background-image: url("images/Naboo_3.jpeg"), radial-gradient(transparent, black);
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: aqua;
+    padding: 2%;
+    height: max-content;
+    float: left;
+    margin-bottom: 2%;
+}
+#header-background p {
+    font-size: larger;
+}
+
+/* Section 1 */
+#section-1 img {
+    float: right;
+    width: 35%;
+    margin-left: 3%;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, .7);
+    
+}
+#section-1 p {
+    color: white;
+    margin-left: 2%;
+}
+
+/* Section 2 */
+#black-section {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+}
+#section-2-heading {
+    color: white;
+    margin-left: 5%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    padding: 0;
+}
+#section-2-heading span {
+    font-family: Aurebesh, Verdana, Geneva, Tahoma, sans-serif;
+}
+.image-column {
+    float: left;
+    color: white;
+    margin: 2% 0% 4% 2%;
+    width: 30%;
+}
+.image-column img {
+    width: 100%;
+}
+
+/* Footer Image */
+#footer-image img {
+    max-width: 100%;
+    float: left;
+}
+#footer-image p {
+    color: white;
+    width: 100%;
+}
