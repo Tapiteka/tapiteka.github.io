@@ -60,6 +60,7 @@ header>img {grid-area: image;}
 .section-parent {
    background-image: url("images/tile1.jpg");
    background-repeat: repeat;
+   padding: 2vh 2vw;
 }
 header>h1 {
    margin: 3vh 0;
@@ -100,6 +101,12 @@ header>p {
    box-shadow: 4px 2px 10px black;
    text-decoration: underline;
 }
+/* SECTION 2 IFRAMES */
+.parent-iframe a>img {
+   height: 20vh;
+   overflow: scroll;
+   width: 20vw;
+}
 
 /* DIVIDER */
 .divider {
@@ -122,14 +129,62 @@ header>p {
 #section-3 {
    padding: 2vh 2vw;
 }
-form {
+table {
    margin: auto;
 }
-form>th {
+th {
    text-decoration: underline;
+}
+td {
+   padding: 2vh 2vw;
 }
 
 /* FORM */
 #section-4 {
-   padding: 2vh 2vw 2vh 4vw;
+   padding-left: 4vw;
+}
+
+/* FOOTER */
+footer {
+   text-align: center;
+   background-color: blanchedalmond;
+   padding: 2vh 1vw;
+}
+footer nav a {
+   padding: 0 2vw;
+}
+
+@media screen and (max-width: 920px) {
+   #section-1 {grid-area: sec1;
+      display: grid;
+      grid-template-areas: 
+      'head'
+      'image'
+      'h2'
+      'par';
+      align-items: center;
+   }
+   #iframe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(30vw, auto));
+      margin: 2vh;
+      align-items: center;
+   }
+   .parent-iframe a>img {
+      height: 30vh;
+      overflow: scroll;
+      width: 35vw;
+   }
+}
+@media screen and (max-width: 540px) {
+   #iframe-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .parent-iframe a>img {
+      height: 30vh;
+      overflow: scroll;
+      width: 40vw;
+   }
 }
