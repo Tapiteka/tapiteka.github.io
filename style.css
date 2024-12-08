@@ -89,12 +89,11 @@ header>p {
 #nav-parent nav a {
    display: block;
    text-decoration: none;
-   font-style: none;
    padding: 3vh 1vw;
    margin: 2vh 0;
    color: rgb(16, 68, 31);
    background-color: rgba(255, 255, 255, .95);
-   text-shadow: 4px black;
+   text-shadow: 4px 2px black;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #nav-parent nav a:hover {
