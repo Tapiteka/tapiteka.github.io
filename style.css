@@ -4,11 +4,132 @@ Assignment: Final Project/Portfolio
 Date: 12/05/2024
 */
 
-/* General */
+/* GENERAL */
 * {
    margin:0;
    padding: 0;
+   font-family: "Patrick Hand", Verdana, 'Segoe UI', Geneva, Tahoma, sans-serif;
 }
 body {
+   display: grid;
    width: 100%;
+   grid-template-areas:
+   'nav sec1'
+   'nav div1'
+   'nav sec2'
+   'nav div2'
+   'nav sec3'
+   'nav div3'
+   'nav sec4'
+   'foot foot'
+}
+h1,h2 {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+}
+
+/* GRID */
+#nav-parent {grid-area: nav;}
+#section-1 {grid-area: sec1; /* has nested grid */
+   display: grid;
+   grid-template-areas: 
+   'head head'
+   'h2 image'
+   'par image';
+}
+#divider-1 {grid-area: div1;}
+#section-2 {grid-area: sec2;} /* has nested grid */
+#divider-2 {grid-area: div2;}
+#section-3 {grid-area: sec3;}
+#divider-3 {grid-area: div3;}
+#section-4 {grid-area: sec4;}
+footer {grid-area: foot;}
+/* Nested Grid in Section 1 */
+header>h1 {grid-area: head;}
+header>h2 {grid-area: h2;}
+header>p {grid-area: par;}
+header>img {grid-area: image;}
+/* Nested Grid in Section 2 */
+#iframe-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+   margin: 2vh;
+}
+
+/* HEADER AND BACKGROUND */
+.section-parent {
+   background-image: url("images/tile1.jpg");
+   background-repeat: repeat;
+}
+header>h1 {
+   margin: 3vh 0;
+}
+header>h2 {
+   margin-top: 10vh;
+}
+header>img {
+   margin: 3vh 0 3vh 2vw;
+   box-shadow: 3px 2px 10px rgba(0, 0, 0, .8);
+}
+header>p {
+   padding: 2vw;
+}
+
+/* NAVBAR */
+#nav-parent {
+   background-image: url("images/vertical_border2.png");
+   background-repeat: repeat-y;
+   background-size:contain;
+}
+#nav-parent nav {
+   position: sticky;
+   top: 25vh;
+}
+#nav-parent nav a {
+   display: block;
+   text-decoration: none;
+   font-style: none;
+   padding: 3vh 1vw;
+   margin: 2vh 0;
+   color: rgb(16, 68, 31);
+   background-color: rgba(255, 255, 255, .95);
+   text-shadow: 4px black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#nav-parent nav a:hover {
+   box-shadow: 4px 2px 10px black;
+   text-decoration: underline;
+}
+
+/* DIVIDER */
+.divider {
+   display:block;
+}
+.divider::after {
+   content:"";
+   clear:both;
+   display:table;
+ }
+.divider-img {
+   margin-right: 0;
+   margin-left: auto;
+   height: 20vh;
+   float: right;
+   width: 80vw;
+}
+
+/* TABLE */
+#section-3 {
+   padding: 2vh 2vw;
+}
+form {
+   margin: auto;
+}
+form>th {
+   text-decoration: underline;
+}
+
+/* FORM */
+#section-4 {
+   padding: 2vh 2vw 2vh 4vw;
 }

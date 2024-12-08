@@ -11,114 +11,135 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/b08cf02381.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Patrick+Hand&family=Quicksand:wght@300..700&family=Rubik+Dirt&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Tabitha Love: Front-End Web Portfolio</title>
 </head>
 
 <body>
   <!--Section 1: Header/About Me-->
-  <header>
+  <header class="section-parent" id="section-1">
     <h1>Tabitha Love</h1>
-    <section>
-      <h2>Front-End Web Design</h2>
-      <p></p>
-      <p>I focus on creating and improving sites for small businesses by streamlining processes,
-        reducing visual clutter, and polishing design. Intuitive user interface and impressive visuals
-        never have to be mutually exclusive.</p>
-      <img src="images/profile.jpg" alt="Picture of Tabitha" width="500">
-    </section>
+    <h2>HTML and CSS Design</h2>
+    <p>I like to analyze stories from books, shows, movies, and video games. I help on my family's homestead a bit and
+      enjoy going out to eat when I don't feel like cooking. When given the chance, I tend to enjoy camping at lakes and
+      traveling. This summer I attempted to grow a green thumb.<br><br>
+      In my work, I focus on creating and improving sites for small businesses by streamlining processes,
+      reducing visual clutter, and polishing design. Intuitive user interface and impressive visuals
+      never have to be mutually exclusive.</p>
+    <img id="profile-img" src="images/profile.jpg" alt="Picture of Tabitha" width="500">
   </header>
 
+  <!--Navbar-->
+  <div id="nav-parent">
+    <nav>
+      <a href="#section-1">About Me</a>
+      <a href="#section-2">Previous Work</a>
+      <a href="#section-3">Table</a>
+      <a href="#section-4">Contact Me</a>
+    </nav>
+  </div>
+
   <!--Divider-->
-  <div>
-    <img src="images/branch1.png" alt="break">
+  <div class="divider" id="divider-1">
+    <img class="divider-img" src="images/branch1.png" alt="break">
   </div>
 
   <!--Section 2: Previous Work-->
-  <section>
+  <section class="section-parent" id="section-2">
     <h1>Previous Work</h1>
     <!--Fitness Iframe-->
-    <details>
-      <summary>Fitness Club</summary>
-      <a href="FFFFitnessClub/index.html" target="_blank"><iframe src="FFFFitnessClub/index.html"
-          title="Fit for Fun Fitness Club Website"></iframe></a>
-    </details>
-    <!--Happy Tails Iframe-->
-    <details>
-      <summary>Happy Tails</summary>
-      <a href="HappyTails/index.html" target="_blank"><iframe src="HappyTails/index.html"
-          title="Happy Tails Pet Hotel Website"></iframe></a>
-    </details>
-    <!--Fishing Iframe-->
-    <details>
-      <summary>Howard's Bait and Tackle</summary>
-      <a href="Fishing/index.html" target="_blank"><iframe src="Fishing/index.html"
-          title="Howard's Lakeside General Store Website"></iframe></a>
-    </details>
-    <!--Scholastic Schedule Iframe-->
-    <details>
-      <summary>Scholastic Schedule</summary>
-      <a href="My_Schedule/index.html" target="_blank"><iframe src="My_Schedule/index.html"
-          title="OTC Individual Fall Schedule for Week 4"></iframe></a>
-    </details>
-    <!--Naboo Travel Site Iframe-->
-    <details>
-      <summary>Naboo Travel Agency</summary>
-      <a href="TravelSite/index.html" target="_blank"><iframe src="TravelSite/index.html"
-          title="Naboo Travel Agency Website"></iframe></a>
-    </details>
-    <!--Shanghai Express Iframe-->
-    <details>
-      <summary>Shanghai Express</summary>
-      <a href="ShanghaiExpress/index.html" target="_blank"><iframe src="ShanghaiExpress/index.html"
-          title="Shanghai Express Oriental Restaurant Website"></iframe></a>
-    </details>
+    <div id="iframe-grid">
+      <details class="parent-iframe">
+        <summary>Fitness Club</summary>
+        <a href="FFFFitnessClub/index.html" target="_blank"><iframe src="FFFFitnessClub/index.html"
+            title="Fit for Fun Fitness Club Website"></iframe></a>
+      </details>
+      <!--Happy Tails Iframe-->
+      <details class="parent-iframe">
+        <summary>Happy Tails</summary>
+        <a href="HappyTails/index.html" target="_blank"><iframe src="HappyTails/index.html"
+            title="Happy Tails Pet Hotel Website"></iframe></a>
+      </details>
+      <!--Fishing Iframe-->
+      <details class="parent-iframe">
+        <summary>Howard's Bait and Tackle</summary>
+        <a href="Fishing/index.html" target="_blank"><iframe src="Fishing/index.html"
+            title="Howard's Lakeside General Store Website"></iframe></a>
+      </details>
+      <!--Scholastic Schedule Iframe-->
+      <details class="parent-iframe">
+        <summary>Scholastic Schedule</summary>
+        <a href="My_Schedule/index.html" target="_blank"><iframe src="My_Schedule/index.html"
+            title="OTC Individual Fall Schedule for Week 4"></iframe></a>
+      </details>
+      <!--Naboo Travel Site Iframe-->
+      <details class="parent-iframe">
+        <summary>Naboo Travel Agency</summary>
+        <a href="TravelSite/index.html" target="_blank"><iframe src="TravelSite/index.html"
+            title="Naboo Travel Agency Website"></iframe></a>
+      </details>
+      <!--Shanghai Express Iframe-->
+      <details class="parent-iframe">
+        <summary>Shanghai Express</summary>
+        <a href="ShanghaiExpress/index.html" target="_blank"><iframe src="ShanghaiExpress/index.html"
+            title="Shanghai Express Oriental Restaurant Website"></iframe></a>
+      </details>
+    </div>
   </section>
 
   <!--Divider-->
-  <div>
-    <img src="images/branch2.png" alt="break">
+  <div class="divider" id="divider-2">
+    <img class="divider-img" src="images/branch2.png" alt="break" style="height:30vh">
   </div>
 
   <!--Section 3: Table?-->
-  <table>
-    <tr>
-      <th>Popular Table Items:</th>
-      <th>Example 1:</th>
-      <th>Example 2:</th>
-    </tr>
-    <tr>
-      <td>Calendar Dates</td>
-      <td>December 4th, 2024</td>
-      <td>12/05/24</td>
-    </tr>
-    <tr>
-      <td>Shopping Lists</td>
-      <td>Eggnog</td>
-      <td>Toilet Paper Rolls</td>
-    </tr>
-    <tr>
-      <td>Skills</td>
-      <td>Bootstrap 5</td>
-      <td>HTML 5/CSS</td>
-    </tr>
-  </table>
+  <div class="section-parent" id="section-3">
+    <h2>Table</h2>
+    <table>
+      <tr>
+        <th>Popular Table Items:</th>
+        <th>Example 1:</th>
+        <th>Example 2:</th>
+      </tr>
+      <tr>
+        <td>Calendar Dates</td>
+        <td>December 4th, 2024</td>
+        <td>12/05/24</td>
+      </tr>
+      <tr>
+        <td>Shopping Lists</td>
+        <td>Eggnog</td>
+        <td>Toilet Paper Rolls</td>
+      </tr>
+      <tr>
+        <td>Skills</td>
+        <td>Bootstrap 5</td>
+        <td>HTML 5/CSS</td>
+      </tr>
+    </table>
+  </div>
 
   <!--Divider-->
-  <div>
-    <img src="images/branch1.png" alt="break">
+  <div class="divider" id="divider-3">
+    <img class="divider-img" src="images/branch1.png" alt="break">
   </div>
 
   <!--Section 4: Contact Me/Form-->
-  <form>
-    <label for="fname">First Name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit"><br>
-  </form>
+  <div class="section-parent" id="section-4">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <input type="submit" value="Submit"><br>
+    </form>
+  </div>
 
   <!--Section 5: Footer-->
   <footer>
