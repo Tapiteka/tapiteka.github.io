@@ -93,7 +93,6 @@ header>p {
    margin: 2vh 0;
    color: rgb(16, 68, 31);
    background-color: rgba(255, 255, 255, .95);
-   text-shadow: 4px 2px black;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #nav-parent nav a:hover {
@@ -133,9 +132,11 @@ table {
 }
 th {
    text-decoration: underline;
+   padding: 1vh 2vw;
 }
 td {
    padding: 2vh 2vw;
+   text-align: center;
 }
 
 /* FORM */
@@ -151,6 +152,7 @@ footer {
 }
 footer nav a {
    padding: 0 2vw;
+   color: black;
 }
 
 @media screen and (max-width: 920px) {
